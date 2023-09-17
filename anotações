@@ -1,0 +1,2 @@
+ng g c "pasto-componente/nome-componente" => Cria componente
+ng serve => Executa a aplicação
