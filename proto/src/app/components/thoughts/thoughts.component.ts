@@ -16,7 +16,7 @@ export class ThoughtsComponent implements OnInit {
     id: 1,
     content: '',
     author: '',
-    model: ''
+    model: 'modelo1'
   }
 
   ngOnInit(): void {
