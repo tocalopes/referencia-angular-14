@@ -9,13 +9,15 @@ import { CreateThoughtComponent } from './components/thoughts/create-thought/cre
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListToughtsComponent } from './components/thoughts/list-thoughts/list-thoughts.component';
 import { ThoughtComponent } from './components/thoughts/thought/thought.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   declarations: [
     AppComponent,

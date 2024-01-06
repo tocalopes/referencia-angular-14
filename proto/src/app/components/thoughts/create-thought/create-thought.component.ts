@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { Though } from 'src/app/models/thought-model';
 
 @Component({
   selector: 'app-create-thought',
@@ -12,7 +13,7 @@ export class CreateThoughtComponent implements OnInit {
   contentFormControl:FormControl = new FormControl("")
   authorFormControl: FormControl = new FormControl("")
 
-  thought = {
+  thought: Though = {
     id: 1,
     content: '',
     author: '',
