@@ -10,6 +10,7 @@ import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListToughtsComponent } from './components/thoughts/list-thoughts/list-thoughts.component';
 import { ThoughtComponent } from './components/thoughts/thought/thought.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DeleteThoughtComponent } from './components/thoughts/delete-thought/delete-thought.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     CreateThoughtComponent,
     ListToughtsComponent,
-    ThoughtComponent
+    ThoughtComponent,
+    DeleteThoughtComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,4 @@
+import { DeleteThoughtComponent } from './delete-thought/delete-thought.component';
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
 import { Thought } from 'src/app/models/thought-model';
@@ -19,5 +20,17 @@ export class ThoughtService {
   create(obj:Thought): Observable<Thought>{
     return this.http.post<Thought>(this.API,obj)
   }
+
+  delete(id: number): Observable<Thought> {
+    const url = `${this.API}/${id}`;
+    return this.http.delete<Thought>(url)
+  }
+
+  findById(id: number): Observable<Thought> {
+    const url =`${this.API}/${id}`;
+    return this.http.get<Thought>(url);
+  }
+
+
 
 }

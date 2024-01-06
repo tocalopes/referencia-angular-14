@@ -29,6 +29,6 @@ export class CreateThoughtComponent implements OnInit {
   }
 
   cancel(){
-    this.router.navigate(['/list-thought']
+    this.router.navigate(['/list-thought']);
   }
 }
