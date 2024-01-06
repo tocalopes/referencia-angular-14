@@ -7,7 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CreateThoughtComponent } from './components/thoughts/create-thought/create-thought.component';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ListToughtsComponent } from './components/thoughts/list-toughts/list-toughts.component';
+import { ListToughtsComponent } from './components/thoughts/list-thoughts/list-thoughts.component';
 
 @NgModule({
   imports: [

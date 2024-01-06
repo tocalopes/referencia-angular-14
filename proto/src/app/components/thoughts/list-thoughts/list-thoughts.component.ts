@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-list-toughts',
-  templateUrl: './list-toughts.component.html',
-  styleUrls: ['./list-toughts.component.css']
+  selector: 'app-list-thoughts',
+  templateUrl: './list-thoughts.component.html',
+  styleUrls: ['./list-thoughts.component.css']
 })
 export class ListToughtsComponent implements OnInit {
 
