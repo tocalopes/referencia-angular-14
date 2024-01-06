@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CreateThoughtComponent } from './components/thoughts/create-thought/create-thought.component';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListToughtsComponent } from './components/thoughts/list-thoughts/list-thoughts.component';
+import { ThoughtComponent } from './components/thoughts/thought/thought.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { ListToughtsComponent } from './components/thoughts/list-thoughts/list-t
     HeaderComponent,
     FooterComponent,
     CreateThoughtComponent,
-    ListToughtsComponent
+    ListToughtsComponent,
+    ThoughtComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
