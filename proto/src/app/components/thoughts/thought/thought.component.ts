@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Though } from 'src/app/models/thought-model';
+import { Thought } from 'src/app/models/thought-model';
 
 @Component({
   selector: 'app-thought',
@@ -9,7 +9,7 @@ import { Though } from 'src/app/models/thought-model';
 export class ThoughtComponent implements OnInit {
 
   @Input()
-  thought!: Though;
+  thought!: Thought;
 
   constructor() { }
 

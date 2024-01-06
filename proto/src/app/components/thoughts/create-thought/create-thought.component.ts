@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { Though } from 'src/app/models/thought-model';
+import { Thought } from 'src/app/models/thought-model';
+import { ThoughtService } from '../thought.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-thought',
@@ -9,12 +11,11 @@ import { Though } from 'src/app/models/thought-model';
 })
 export class CreateThoughtComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: ThoughtService, private router: Router) { }
   contentFormControl:FormControl = new FormControl("")
   authorFormControl: FormControl = new FormControl("")
 
-  thought: Though = {
-    id: 1,
+  thought: Thought = {
     content: '',
     author: '',
     model: 'modelo1'
@@ -24,16 +25,10 @@ export class CreateThoughtComponent implements OnInit {
   }
 
   createTought(){
-    this.thought.content = this.contentFormControl.value
-    this.thought.author = this.authorFormControl.value
+    this.service.create(this.thought).subscribe(t => this.router.navigate(['/list-thought']))
   }
 
   cancel(){
-    this.thought = {
-      id: 1,
-      content: '',
-      author: '',
-      model: ''
-    }
+    this.router.navigate(['/list-thought']
   }
 }

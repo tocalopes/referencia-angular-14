@@ -1,5 +1,5 @@
-export interface Though{
-    id: number
+export interface Thought{
+    id?: number
     content: string
     author: string
     model: string
