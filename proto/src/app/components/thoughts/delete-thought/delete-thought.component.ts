@@ -1,7 +1,9 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ThoughtService } from '../thought.service';
 import { Thought } from 'src/app/models/thought-model';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-delete-thought',
@@ -34,6 +36,7 @@ export class DeleteThoughtComponent implements OnInit {
   cancel(){
     this.router.navigate(['/list-thought']);
   }
+
 
   deleteThought(){
     console.log(this.thought.id);

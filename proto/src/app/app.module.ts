@@ -11,6 +11,7 @@ import { ListToughtsComponent } from './components/thoughts/list-thoughts/list-t
 import { ThoughtComponent } from './components/thoughts/thought/thought.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DeleteThoughtComponent } from './components/thoughts/delete-thought/delete-thought.component';
+import { EditThoughtComponent } from './components/thoughts/edit-thought/edit-thought.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { DeleteThoughtComponent } from './components/thoughts/delete-thought/del
     CreateThoughtComponent,
     ListToughtsComponent,
     ThoughtComponent,
-    DeleteThoughtComponent
+    DeleteThoughtComponent,
+    EditThoughtComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
